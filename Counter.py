@@ -34,7 +34,7 @@ def clicked4():
 
 def clicked5():
     root.counter5 += 1
-    L4['text'] = 'Long phone calls: ' + str(root.counter5)
+    L5['text'] = 'Long phone calls: ' + str(root.counter5)
 
 #Buttons and labels
 b = Button(root, text="Tickets closed", command=clicked)
