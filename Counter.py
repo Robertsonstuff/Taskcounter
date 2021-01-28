@@ -1,4 +1,7 @@
 from tkinter import *
+import datetime
+
+now = datetime.datetime.now()
 
 #window
 root = Tk()
@@ -7,6 +10,9 @@ root.title("Luke's Task Counter")
 heading = Label(root,
 text = "Count your daily tasks", bg = "white", fg = "black", width = "680", height = "3")
 heading.pack()
+
+T = Label(root, text=(now.strftime("%d-%m-%Y ")), bg = "white")
+T.place(x = 15, y = 15)
 
 #variables for each function
 root.counter = 0
